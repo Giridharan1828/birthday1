@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HAPPIEST BIRTHDAY </title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+  <style>
+   body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: #0b0220;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+    h1 {
+      font-size: 3em;
+      color: #fff;
+      margin-top: 30px;
+      text-shadow: 2px 2px 5px #9b30ff;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #9b30ff; }
+      to { text-shadow: 0 0 30px #da70d6, 0 0 40px #9b30ff; }
+    }
+
+    .message {
+      font-size: 1.5em;
+      color: #fff;
+      margin: 10px 0 30px;
+    }
+
+    #balloons { position: fixed; inset: 0; pointer-events: none; z-index: 1; }
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 50px;
+      height: 70px;
+      border-radius: 50% 50% 45% 55%;
+      animation: floatUp 8s infinite ease-in;
+    }
+
+    @keyframes floatUp { from{ transform: translateY(0); } to{ transform: translateY(-110vh); } }
+
+    #secret, #unlockSurprise {
+      position: fixed;
+      color: #ffffffaa;
+      font-size: 14px;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    #secret { bottom: 20px; right: 20px; }
+    #unlockSurprise { bottom: 70px; right: 20px; }
+
+    /* Secret Message Popup */
+    #secretMessage {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      padding: 30px 40px 40px 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #9b30ff;
+      font-size: 1.2em;
+      color: #333;
+      z-index: 3;
+      max-width: 90vw;
+      max-height: 70vh;
+      overflow-y: auto;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    /* Close Button inside Secret Message */
+    #closeSecretBtn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #9b30ff;
+      border: none;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+    #closeSecretBtn:hover {
+      background: #7b1fa2;
+    }
+
+    #playBtn {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      padding: 10px 16px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: #9b30ff;
+      color: white;
+      z-index: 2;
+    }
+
+    #gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 10px;
+      z-index: 2;
+      position: relative;
+    }
+
+    #gallery img,
+    #surpriseImages img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+
+    #gallery img:hover,
+    #surpriseImages img:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    #surpriseGallery {
+      display: none;
+      margin-top: 40px;
+      padding: 20px;
+    }
+
+    #surpriseGallery h2 {
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    #surpriseImages {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <h1> HAPPIEST BIRTHDAY! 🐢</h1>
+  <div class="message"> In a quiet village nestled between emerald hills and flowing rivers, life moved at a pace untouched by the chaos of the outside world. The mornings began with the gentle crowing of roosters and the distant hum of farmers preparing their fields. Dew clung to every blade of grass, sparkling under the golden kiss of dawn. Children would dash through narrow dirt paths, chasing each other with laughter that echoed through the valley. The scent of fresh bread drifted from clay ovens, mingling with the earthy aroma of blooming jasmine and wet soil. Old men sat under banyan trees, sipping sweet tea and recounting stories from decades past—tales of love, loss, war, and rain that came too late or too soon. Life in the village was not about speed or spectacle; it was about rhythm and memory. Evenings came with painted skies—streaks of orange, pink, and purple that melted into twilight. Oil lamps flickered in small windows, casting shadows on the cracked walls of centuries-old homes. Crickets began their nightly symphony, joined by the distant hoot of an owl perched somewhere unseen. Conversations drifted in soft tones from courtyards where families gathered around modest meals, sharing news of the day or planning for the harvest. Time, in this place, did not rush; it wandered. Even grief felt softer, cushioned by the familiarity of tradition and the kindness of neighbors who always showed up—with hands full of food, or arms open for embrace. There was no luxury, but there was richness in every detail: the way the wind danced through tall sugarcane, the way stories were passed from mouth to mouth like sacred heirlooms, and the way even silence felt full—alive, somehow, with the pulse of generations who had walked the same paths barefoot, with dreams as wide as the sky. Strangers rarely visited, and when they did, they often stayed longer than planned, caught in the spell of the village’s slow, deliberate charm. The world outside moved faster, louder, more disconnected—but in this hidden corner, everything felt intentional. Every sunrise had a purpose, every goodbye held weight, and every simple joy—a blooming flower, a shared joke, a warm breeze—was a celebration in itself. Here, the ordinary was extraordinary, and life, though simple, was deeply profound..</div>
+
+  <div id="gallery"></div>
+  <div id="balloons"></div>
+
+  <!-- Secret Message -->
+  <div id="secret">🔒 Enter Secret Code</div>
+  <div id="secretMessage">
+    <button id="closeSecretBtn" aria-label="Close secret message">Close ✖</button>
+    In a quiet village nestled between emerald hills and flowing rivers, life moved at a pace untouched by the chaos of the outside world. The mornings began with the gentle crowing of roosters and the distant hum of farmers preparing their fields. Dew clung to every blade of grass, sparkling under the golden kiss of dawn. Children would dash through narrow dirt paths, chasing each other with laughter that echoed through the valley. The scent of fresh bread drifted from clay ovens, mingling with the earthy aroma of blooming jasmine and wet soil. Old men sat under banyan trees, sipping sweet tea and recounting stories from decades past—tales of love, loss, war, and rain that came too late or too soon. Life in the village was not about speed or spectacle; it was about rhythm and memory. Evenings came with painted skies—streaks of orange, pink, and purple that melted into twilight. Oil lamps flickered in small windows, casting shadows on the cracked walls of centuries-old homes. Crickets began their nightly symphony, joined by the distant hoot of an owl perched somewhere unseen. Conversations drifted in soft tones from courtyards where families gathered around modest meals, sharing news of the day or planning for the harvest. Time, in this place, did not rush; it wandered. Even grief felt softer, cushioned by the familiarity of tradition and the kindness of neighbors who always showed up—with hands full of food, or arms open for embrace. There was no luxury, but there was richness in every detail: the way the wind danced through tall sugarcane, the way stories were passed from mouth to mouth like sacred heirlooms, and the way even silence felt full—alive, somehow, with the pulse of generations who had walked the same paths barefoot, with dreams as wide as the sky. Strangers rarely visited, and when they did, they often stayed longer than planned, caught in the spell of the village’s slow, deliberate charm. The world outside moved faster, louder, more disconnected—but in this hidden corner, everything felt intentional. Every sunrise had a purpose, every goodbye held weight, and every simple joy—a blooming flower, a shared joke, a warm breeze—was a celebration in itself. Here, the ordinary was extraordinary, and life, though simple, was deeply profound.
+  </div>
+
+  <!-- Surprise Gallery Unlock -->
+  <div id="unlockSurprise">🎁 Unlock Surprise Gallery</div>
+
+  <!-- Surprise Gallery Section -->
+  <div id="surpriseGallery">
+    <h2>💞 Our Memories 💞</h2>
+    <div id="surpriseImages"></div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bgAudio" loop>
+    <source src="sample.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <button id="playBtn">▶ Play Music</button>
+
+  <script>
+    // Balloons
+    const colors = ["#8a2be2","#9932cc","#ba55d3","#9400d3","#da70d6"];
+    for(let i=0;i<20;i++){
+      const b=document.createElement("div");
+      b.className="balloon";
+      b.style.left=Math.random()*100+"vw";
+      b.style.background=colors[Math.floor(Math.random()*colors.length)];
+      b.style.animationDuration=(5+Math.random()*5)+"s";
+      document.getElementById("balloons").appendChild(b);
+    }
+
+    // Secret Message Unlock
+    const secret = document.getElementById("secret");
+    const secretMsg = document.getElementById("secretMessage");
+    const closeSecretBtn = document.getElementById("closeSecretBtn");
+
+    secret.addEventListener("click", () => {
+      const code = prompt("Enter the secret code:");
+      if (code === "1") {
+        secretMsg.style.display = "block";
+      } else if (code !== null) {
+        alert("Wrong code! Try again 💡");
+      }
+    });
+
+    closeSecretBtn.addEventListener("click", () => {
+      secretMsg.style.display = "none";
+    });
+
+    // Background Music
+    const audio = document.getElementById("bgAudio");
+    const playBtn = document.getElementById("playBtn");
+    playBtn.addEventListener("click", () => {
+      if (audio.paused) {
+        audio.play();
+        playBtn.style.display = "none";
+      }
+    });
+
+    // Main Gallery (1-100)
+    const gallery = document.getElementById("gallery");
+   for (let i = 0; i <= 100; i++) {
+  const img = document.createElement("img");
+  img.src = `images/${i}-min.jpg`;
+  img.onerror = () => img.remove();  // Remove if image doesn't exist
+  img.loading = "lazy"; // Optional: add lazy loading
+  gallery.appendChild(img);
+}
+
+
+    // Surprise Gallery Unlock
+    const unlockSurprise = document.getElementById("unlockSurprise");
+    const surpriseGallery = document.getElementById("surpriseGallery");
+    const surpriseImages = document.getElementById("surpriseImages");
+
+    unlockSurprise.addEventListener("click", () => {
+      const pass = prompt("Enter surprise code:");
+      if (pass === "1") {
+        surpriseGallery.style.display = "block";
+        for (let i = 1; i <= 50; i++) {
+          const img = document.createElement("img");
+          img.src = `surprise/${i}.jpg`;
+          img.onerror = () => img.remove();
+          surpriseImages.appendChild(img);
+        }
+        unlockSurprise.style.display = "none";
+      } else if (pass !== null) {
+        alert("Incorrect code! 💔");
+      }
+    });
+  </script>
+</body>
+</html>

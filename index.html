@@ -163,7 +163,7 @@
 <body>
 
   <h1> HAPPIEST BIRTHDAY! 🐢</h1>
-  <div class="message"> In a quiet village nestled between emerald hills and flowing rivers, life moved at a pace untouched by the chaos of the outside world. The mornings began with the gentle crowing of roosters and the distant hum of farmers preparing their fields. Dew clung to every blade of grass, sparkling under the golden kiss of dawn. Children would dash through narrow dirt paths, chasing each other with laughter that echoed through the valley. The scent of fresh bread drifted from clay ovens, mingling with the earthy aroma of blooming jasmine and wet soil. Old men sat under banyan trees, sipping sweet tea and recounting stories from decades past—tales of love, loss, war, and rain that came too late or too soon. Life in the village was not about speed or spectacle; it was about rhythm and memory. Evenings came with painted skies—streaks of orange, pink, and purple that melted into twilight. Oil lamps flickered in small windows, casting shadows on the cracked walls of centuries-old homes. Crickets began their nightly symphony, joined by the distant hoot of an owl perched somewhere unseen. Conversations drifted in soft tones from courtyards where families gathered around modest meals, sharing news of the day or planning for the harvest. Time, in this place, did not rush; it wandered. Even grief felt softer, cushioned by the familiarity of tradition and the kindness of neighbors who always showed up—with hands full of food, or arms open for embrace. There was no luxury, but there was richness in every detail: the way the wind danced through tall sugarcane, the way stories were passed from mouth to mouth like sacred heirlooms, and the way even silence felt full—alive, somehow, with the pulse of generations who had walked the same paths barefoot, with dreams as wide as the sky. Strangers rarely visited, and when they did, they often stayed longer than planned, caught in the spell of the village’s slow, deliberate charm. The world outside moved faster, louder, more disconnected—but in this hidden corner, everything felt intentional. Every sunrise had a purpose, every goodbye held weight, and every simple joy—a blooming flower, a shared joke, a warm breeze—was a celebration in itself. Here, the ordinary was extraordinary, and life, though simple, was deeply profound..</div>
+  <div class="message">Today on </div>
 
   <div id="gallery"></div>
   <div id="balloons"></div>
@@ -172,7 +172,7 @@
   <div id="secret">🔒 Enter Secret Code</div>
   <div id="secretMessage">
     <button id="closeSecretBtn" aria-label="Close secret message">Close ✖</button>
-    In a quiet village nestled between emerald hills and flowing rivers, life moved at a pace untouched by the chaos of the outside world. The mornings began with the gentle crowing of roosters and the distant hum of farmers preparing their fields. Dew clung to every blade of grass, sparkling under the golden kiss of dawn. Children would dash through narrow dirt paths, chasing each other with laughter that echoed through the valley. The scent of fresh bread drifted from clay ovens, mingling with the earthy aroma of blooming jasmine and wet soil. Old men sat under banyan trees, sipping sweet tea and recounting stories from decades past—tales of love, loss, war, and rain that came too late or too soon. Life in the village was not about speed or spectacle; it was about rhythm and memory. Evenings came with painted skies—streaks of orange, pink, and purple that melted into twilight. Oil lamps flickered in small windows, casting shadows on the cracked walls of centuries-old homes. Crickets began their nightly symphony, joined by the distant hoot of an owl perched somewhere unseen. Conversations drifted in soft tones from courtyards where families gathered around modest meals, sharing news of the day or planning for the harvest. Time, in this place, did not rush; it wandered. Even grief felt softer, cushioned by the familiarity of tradition and the kindness of neighbors who always showed up—with hands full of food, or arms open for embrace. There was no luxury, but there was richness in every detail: the way the wind danced through tall sugarcane, the way stories were passed from mouth to mouth like sacred heirlooms, and the way even silence felt full—alive, somehow, with the pulse of generations who had walked the same paths barefoot, with dreams as wide as the sky. Strangers rarely visited, and when they did, they often stayed longer than planned, caught in the spell of the village’s slow, deliberate charm. The world outside moved faster, louder, more disconnected—but in this hidden corner, everything felt intentional. Every sunrise had a purpose, every goodbye held weight, and every simple joy—a blooming flower, a shared joke, a warm breeze—was a celebration in itself. Here, the ordinary was extraordinary, and life, though simple, was deeply profound.
+    Last year , this same day , 6th October , we were different in places , not in the same way nor mind nor heart , but we existed side by side in class not knowing the lore which was about to come , we both took almost a year to find this eternal bonding , guess what ,is it all worth this take ? , WE KNOW THE WORTH WE HAVE , i know we cant even explain those , words cant even match the things we want to say , then where we go to express all we thought and think of all ? , i dont think will finish em up in this life line or even with immortality , coz you will add on the greets anyways , arghhhh this time sucks , running with its ass off every single time when im with you , cant that mf stay still when im with you 😭🙏, CRUELEST MF, but cant make him carry all coz he made everything to make happen to see you , GRATEFUL TOOOOOOOO , HE GAVE THE PUREST SOUL EVER TO EXIST , thanks my man for only giving me this kindest person on earth , thanks for not letting slip away , As we enter present timeline now , LIFE A'INT THE SAME SINCE I MET YOU , we know and said with each other, that when we met , we know ourselves that ,this isn't something we already had or usual , we both know that there's something else special within us, MAGIC ? or INSTINCT? , not probably , TRAUMAUS? , NVM!! . But there begun a spark of flame and love that will be never turn off even after eternity . 
   </div>
 
   <!-- Surprise Gallery Unlock -->
@@ -233,7 +233,7 @@
 
     // Main Gallery (1-100)
     const gallery = document.getElementById("gallery");
-   for (let i = 0; i <= 100; i++) {
+   for (let i = 0; i <= 500; i++) {
   const img = document.createElement("img");
   img.src = `images/${i}-min.jpg`;
   img.onerror = () => img.remove();  // Remove if image doesn't exist
@@ -251,7 +251,7 @@
       const pass = prompt("Enter surprise code:");
       if (pass === "1") {
         surpriseGallery.style.display = "block";
-        for (let i = 1; i <= 50; i++) {
+        for (let i = 1; i <= 500; i++) {
           const img = document.createElement("img");
           img.src = `surprise/${i}.jpg`;
           img.onerror = () => img.remove();

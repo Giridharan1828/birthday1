@@ -191,6 +191,21 @@
 </audio>
 <button id="playBtn">▶ Play Music</button>
 
+<script>
+  const audio = document.getElementById('bgAudio');
+  const playBtn = document.getElementById('playBtn');
+
+  playBtn.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      playBtn.textContent = '⏸ Pause Music';
+    } else {
+      audio.pause();
+      playBtn.textContent = '▶ Play Music';
+    }
+  });
+</script>
+
   <script>
     // Balloons
     const colors = ["#8a2be2","#9932cc","#ba55d3","#9400d3","#da70d6"];
